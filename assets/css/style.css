@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(39, 39, 39);
+  --primary-color-darker: rgb(82, 82, 82);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+  background: #000000;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+}
+
+.tituloAtividade {
+  text-align: center;
+}
+
+ input,  label, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  height: 100px;
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background: var(--primary-color-darker);
+  transition: all 200ms;
+}
+
+#resultado {
+  text-align: center;
+}
+
+.calculadora {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.linha1 button {
+  background-color: gray;
+  color: #000000;
+}
+
+.linha1 button:hover {
+  background-color: rgb(190, 190, 190);
+  transition: all 200ms;
+}
+
+td:nth-child(4) button{
+  background-color: rgb(255, 102, 0);
+  color: white;
+}
+
+td:nth-child(4) button:hover{
+  background-color: rgb(255, 129, 46);
+  color: white;
+}
+
+#display {
+  text-align: right;
+}
